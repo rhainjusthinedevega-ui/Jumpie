@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Jump</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game-container">
+    <h1>PIXEL JUMP</h1>
+    <p class="subtitle">Jump, dodge, and survive!</p>
+
+    <div class="scoreboard">
+      <span id="score">SCORE: 0</span>
+      <span id="best">BEST: 0</span>
+    </div>
+
+    <div class="game-frame">
+      <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+      <div id="startScreen" class="overlay">
+        <h2>PIXEL JUMP</h2>
+        <p>Press SPACE or tap to start</p>
+        <button id="startButton">START GAME</button>
+      </div>
+
+      <div id="gameOverScreen" class="overlay hidden">
+        <h2>GAME OVER!</h2>
+        <p id="finalScore">Your score: 0</p>
+        <button id="restartButton">PLAY AGAIN</button>
+      </div>
+    </div>
+
+    <p class="instructions">
+      SPACE / ↑ / W / TAP = JUMP
+    </p>
+  </main>
+</body>
+</html>
